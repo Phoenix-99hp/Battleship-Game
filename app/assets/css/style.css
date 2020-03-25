@@ -55,7 +55,7 @@ html, body, #content {
 
 header{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 5px;
     font-size: 100px;
     color: rgb(0, 81, 255);
@@ -412,10 +412,10 @@ p {
         position: absolute;
         transform: translateX(-50%);
         text-align: center;
+        /* top:100%; */
+        /* transform: translateY(-100%); */
+        /* padding-top: 40px; */
     }
-}   
-
-@media screen and (max-width: 610px) {
     #computerBoard {
         grid-template-rows: repeat(11, 25px);
         grid-template-columns: repeat(11, 25px);
@@ -432,7 +432,24 @@ p {
         line-height: 1.5;
         text-align: center;
     }
-    .square {
-        line-height: 1.5;
-    }
 }   
+
+@media screen and (max-width: 360px){
+    header {
+        font-size: 85px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #drag {
+        top:100%;
+    }
+    #shipsContainer {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    header {
+        margin-bottom: 0px;
+    }
+
+}
