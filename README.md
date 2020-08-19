@@ -8,4 +8,4 @@ Upon clicking the "Start" button, the user will be instructed to drag their ship
 
 Once the "Ready" button is clicked, the user will be presented with two boards, one board showing their ship placements and the computer's moves, and the other board contains the computer's ships and appears empty until the user clicks a square to make a move. The game ends when the user hits all of the computer's ships, or vice versa. The computer is programmed to make random guesses until it receives a "Hit". Then, it is programmed to make guesses that are close to that hit. 
 
-![](./app/assets/images/battleship.png)
+![](./app/assets/images/battleshipIMG.png)
