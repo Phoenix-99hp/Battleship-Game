@@ -70,14 +70,6 @@ function initializeGame() {
 
 		ships.forEach((ship) => {
 			ship.addEventListener("drag", function (event) {}, false);
-			// ship.addEventListener(
-			// 	"touchstart",
-			// 	function (event) {
-			// 		console.log("TS");
-			// 	},
-			// 	false
-			// );
-
 			ship.addEventListener(
 				"dragend",
 				function (event) {
@@ -85,13 +77,6 @@ function initializeGame() {
 				},
 				false
 			);
-			// ship.addEventListener(
-			// 	"touchend",
-			// 	function (event) {
-			// 		event.target.style.opacity = "";
-			// 	},
-			// 	false
-			// );
 		});
 
 		document.addEventListener(
@@ -110,23 +95,6 @@ function initializeGame() {
 			},
 			false
 		);
-
-		// document.addEventListener(
-		// 	"touchmove",
-		// 	function (event) {
-		// 		dragged = event.target;
-		// 		if (
-		// 			dragged == battleship ||
-		// 			dragged == carrier ||
-		// 			dragged == destroyer ||
-		// 			dragged == patrol ||
-		// 			dragged == submarine
-		// 		) {
-		// 			event.target.style.opacity = 0.5;
-		// 		}
-		// 	},
-		// 	false
-		// );
 
 		document.addEventListener(
 			"dragover",
@@ -189,60 +157,6 @@ function initializeGame() {
 			},
 			false
 		);
-
-		// document.addEventListener(
-		// 	"touchend",
-		// 	function (event) {
-		// 		// event.preventDefault();
-		// 		if (
-		// 			event.target.classList.value.includes("dropzone") &&
-		// 			(dragged == battleship ||
-		// 				dragged == carrier ||
-		// 				dragged == destroyer ||
-		// 				dragged == patrol ||
-		// 				dragged == submarine)
-		// 		) {
-		// 			event.target.style.background = "none";
-		// 			dragged.parentNode.removeChild(dragged);
-		// 			if (event.target.classList.contains("square")) {
-		// 				dragged.style.marginTop = "0px";
-		// 				dragged.style.marginLeft = "0px";
-		// 				dragged.style.marginRight = "0px";
-		// 			} else {
-		// 				dragged.style.marginTop = "10px";
-		// 				dragged.style.marginLeft = "10px";
-		// 				dragged.style.marginRight = "0px";
-		// 			}
-		// 			event.target.appendChild(dragged);
-		// 			let info = getInfo(dragged);
-		// 			updatePlayerObject(info);
-
-		// 			function getInfo(ship) {
-		// 				return [ship.id, ship.orientation, event.target.id];
-		// 			}
-
-		// 			function updatePlayerObject(infoArr) {
-		// 				if (infoArr[0] === "battleship") {
-		// 					Player1.Battleship.orientation = infoArr[1];
-		// 					Player1.Battleship.position[0] = infoArr[2];
-		// 				} else if (infoArr[0] === "carrier") {
-		// 					Player1.Carrier.orientation = infoArr[1];
-		// 					Player1.Carrier.position[0] = infoArr[2];
-		// 				} else if (infoArr[0] === "destroyer") {
-		// 					Player1.Destroyer.orientation = infoArr[1];
-		// 					Player1.Destroyer.position[0] = infoArr[2];
-		// 				} else if (infoArr[0] === "patrol") {
-		// 					Player1.Patrol.orientation = infoArr[1];
-		// 					Player1.Patrol.position[0] = infoArr[2];
-		// 				} else if (infoArr[0] === "submarine") {
-		// 					Player1.Submarine.orientation = infoArr[1];
-		// 					Player1.Submarine.position[0] = infoArr[2];
-		// 				}
-		// 			}
-		// 		}
-		// 	},
-		// 	false
-		// );
 
 		readyBtn.addEventListener("click", () => {
 			const playerShips = [
